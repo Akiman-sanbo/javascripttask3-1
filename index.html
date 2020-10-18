@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang = "ja">
 <head>
-  <meta charset="utf-8">
+  <meta charset = "utf-8">
   <title>TODOリスト</title>
- <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <h1>ToDoリスト</h1>
   
-  <label ><input type = 'radio' checked >すべて</label>
-  <label ><input type = 'radio' >作業中</label>
-  <label ><input type = 'radio' >完了</label>
+  <label ><input type = 'radio' name = 'list' checked >すべて</label>
+  <label ><input type = 'radio' name = 'list' >作業中</label>
+  <label ><input type = 'radio' name = 'list' >完了</label>
   
-  <table id ="tableTarget">
+  <table id = "tableTarget">
     <thead>
       <tr>
         <th>ID</th>
@@ -20,16 +19,16 @@
         <th>状態</th>
       </tr>
     </thead>
-    <tbody id = "addTask-target"></tbody>
+    <tbody id = "add-Target"></tbody>
   </table>
   
   <h2>新規タスクの追加</h2>
   <form>
-    <input id = "addTask-value" type = "text">
-    <button type = "button" id = "addTask-trigger">追加</button>
+    <input id = "add-Value" type = "text">
+    <button type = "button" id = "add-Trigger">追加</button>
   </form>
   
-  <script src="js/main.js"></script>
+  <script src = "js/main.js"></script>
 </body>
 
 </html>
